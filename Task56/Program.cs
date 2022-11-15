@@ -34,8 +34,8 @@ void PrintArray(int[,] inArray)
 
 void CountMinSum(int[,] inArray)
 {
-    int minSumm = 0;
-    int maxSumm = 0;
+    int minSum = 0;
+    int maxSum = 0;
     int temp = 0;
     int s = 0;
     int n = 0;
@@ -51,15 +51,15 @@ void CountMinSum(int[,] inArray)
          
             Console.Write($"{("Сумма строки = " + temp)}\t ");
 
-            if (temp > maxSumm)
-                maxSumm = temp;
+            if (temp > maxSum)
+                maxSum = temp;
 
-            if (minSumm == 0)
-                minSumm = temp;
+            if (minSum == 0)
+                minSum = temp;
 
-            if (minSumm > temp)
+            if (minSum > temp)
             {
-                minSumm = temp;
+                minSum = temp;
                 s = i;
 
             }
