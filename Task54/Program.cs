@@ -1,11 +1,6 @@
 ﻿// Задача 54: Задайте двумерный массив. Напишите программу, которая упорядочит по убыванию 
 //элементы каждой строки двумерного массива. 
 
-Console.Clear();
-Console.Write("Введите количество строк в массиве: ");
-int row = int.Parse(Console.ReadLine()!);
-Console.Write("Введите количество столбцов в массиве: ");
-int columns = int.Parse(Console.ReadLine()!);
 
 int[,] GetArray(int m, int n, int minValue, int maxValue)
 {
@@ -64,6 +59,13 @@ void GetNimbersDescendingOrder(int[,] inArray)
     }
 
 }
+
+Console.Clear();
+Console.Write("Введите количество строк в массиве: ");
+int row = int.Parse(Console.ReadLine()!);
+Console.Write("Введите количество столбцов в массиве: ");
+int columns = int.Parse(Console.ReadLine()!);
+
 Console.WriteLine();
 int[,] array = GetArray(row, columns, 0, 10);
 PrintArray(array);
